@@ -25,6 +25,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_12
         targetCompatibility JavaVersion.VERSION_12
     }
+    compileSdkVersion 31
 }
 
 dependencies {

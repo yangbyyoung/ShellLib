@@ -40,11 +40,11 @@ public class CommandResult implements ShellExitCode {
     public int result;
     private final int code;
     private Cmd cmd;
-    private  String successText;
+    private String successText;
     private final String errorText;
     private Exception exception;
     private transient String exceptionStackTrace;
-    private transient static final List<String> emptyList=new ArrayList<>();
+    private transient static final List<String> emptyList = new ArrayList<>();
 
     public CommandResult(Shell.Result result) {
         this.code = result.getCode();
@@ -70,9 +70,9 @@ public class CommandResult implements ShellExitCode {
     public CommandResult(int result, List<String> listSuccessMsg, List<String> listErrorMsg) {
         this.code = result;
         this.result = result;
-        this.ListSuccessMsg = listSuccessMsg==null?emptyList:listSuccessMsg;
+        this.ListSuccessMsg = listSuccessMsg == null ? emptyList : listSuccessMsg;
         this.successText = toString(listSuccessMsg);
-        this.ListErrorMsg = listErrorMsg==null?emptyList:listErrorMsg;
+        this.ListErrorMsg = listErrorMsg == null ? emptyList : listErrorMsg;
         this.errorText = toString(listErrorMsg);
     }
 
@@ -87,8 +87,6 @@ public class CommandResult implements ShellExitCode {
 
 
     }
-
-
 
 
     /**
@@ -249,6 +247,7 @@ public class CommandResult implements ShellExitCode {
             return sb.toString();
         }
     }
+
     private List<String> toList(String str) {
         List<String> stringList = new ArrayList<>();
         if (!TextUtils.isEmpty(str)) {

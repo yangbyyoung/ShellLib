@@ -22,6 +22,7 @@ public class SuFile extends File {
     private final String filePath;
     private final boolean canNoRoot;
     private final File file;
+
     public SuFile(@NonNull File file) {
         this(file.getAbsolutePath(), true);
     }

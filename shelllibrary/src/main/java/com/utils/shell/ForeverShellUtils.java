@@ -17,7 +17,7 @@ import java.util.List;
 public class ForeverShellUtils implements ShellExitCode {
     private static final Context mContext = Utils.getContext();
     private static final String settingName = "setting";
-    private static final SharedPreferences setting = mContext.getSharedPreferences(settingName,Context.MODE_PRIVATE);
+    private static final SharedPreferences setting = mContext.getSharedPreferences(settingName, Context.MODE_PRIVATE);
     private static final String keyRootPermission = "RootPermission";
     private static ForeverShellUtils foreverShellUtils;
     //private static final Context mContext = ContextUtils.getContext();

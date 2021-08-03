@@ -24,7 +24,7 @@ import java.util.List;
 public class ShellUtils implements ShellExitCode {
     private static final Context mContext = Utils.getContext();
     private static final String settingName = "setting";
-    private static final SharedPreferences setting = mContext.getSharedPreferences(settingName,Context.MODE_PRIVATE);
+    private static final SharedPreferences setting = mContext.getSharedPreferences(settingName, Context.MODE_PRIVATE);
     private static final String keyRootPermission = "RootPermission";
     public static final Charset UTF_8 =
             Build.VERSION.SDK_INT >= 19 ? StandardCharsets.UTF_8 : Charset.forName("UTF-8");
